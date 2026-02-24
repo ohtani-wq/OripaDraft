@@ -39,5 +39,19 @@
             }
         };
     </script>
+
+    <script>
+        window.handleGachaClick = function (dotNetHelper) {
+            // 1. ダミーでも本物でもいいので、この「指が触れた瞬間」に再生を試みる
+            // これにより、この後のダイアログ内の動画再生が「許可済み」扱いになります
+            const v = document.querySelector('video');
+            if (v) {
+                v.play().catch(() => { /* まだタグがなくてもOK */ });
+            }
+
+            // 2. C#側の OnSubmit メソッドを呼び出す
+            dotNetHelper.invokeMethodAsync('InvokeOnSubmit');
+        };
+    </script>
 </body>
 </html>
