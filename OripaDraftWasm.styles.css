@@ -1,0 +1,618 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+/* �w�b�_�[�̌Œ� */
+.app-header[b-j4iqiuk39q] {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 60px;
+    background: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* �t�b�^�[�i�r�̌Œ�i�������́j */
+.sticky-footer-nav[b-j4iqiuk39q] {
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    height: 70px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid #eee;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-item[b-j4iqiuk39q] {
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    color: #666;
+}
+
+    .nav-item.active[b-j4iqiuk39q] {
+        color: #ff4757;
+        font-weight: bold;
+    }
+
+/* �ŉ����̃R���e���c */
+.bottom-info[b-j4iqiuk39q] {
+    background: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+    .bottom-info nav[b-j4iqiuk39q] {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bottom-info a[b-j4iqiuk39q] {
+        color: #333;
+        text-decoration: none;
+        font-size: 13px;
+    }
+/* /Layout/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-8fa52n5y9d] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-8fa52n5y9d] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-8fa52n5y9d] {
+    font-size: 1.1rem;
+}
+
+.bi[b-8fa52n5y9d] {
+    display: inline-block;
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    top: -1px;
+    background-size: cover;
+}
+
+.bi-house-door-fill-nav-menu[b-8fa52n5y9d] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-house-door-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z'/%3E%3C/svg%3E");
+}
+
+.bi-plus-square-fill-nav-menu[b-8fa52n5y9d] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z'/%3E%3C/svg%3E");
+}
+
+.bi-list-nested-nav-menu[b-8fa52n5y9d] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+}
+
+.nav-item[b-8fa52n5y9d] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-8fa52n5y9d] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-8fa52n5y9d] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-8fa52n5y9d]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-8fa52n5y9d]  a.active {
+    background-color: rgba(255,255,255,0.37);
+    color: white;
+}
+
+.nav-item[b-8fa52n5y9d]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-8fa52n5y9d] {
+        display: none;
+    }
+
+    .collapse[b-8fa52n5y9d] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+    
+    .nav-scrollable[b-8fa52n5y9d] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+/* /Shared/ExchangeConfirmModal.razor.rz.scp.css */
+.modal-overlay[b-0cau7oef18] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-content[b-0cau7oef18] {
+    background: #2a2a2a;
+    padding: 24px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #444;
+    color:whitesmoke;
+}
+
+.coin-comparison[b-0cau7oef18] {
+    margin: 20px 0;
+    padding: 15px;
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+
+.coin-row[b-0cau7oef18] {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+    .coin-row.highlight[b-0cau7oef18] {
+        color: #ffca28;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+.modal-actions[b-0cau7oef18] {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+/* /Shared/GachaAnimation.razor.rz.scp.css */
+
+
+/* /Shared/GachaConfirmDialog.razor.rz.scp.css */
+/* 画面全体を覆う背景 */
+.gacha-overlay[b-x9lss561v8] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: none;
+}
+
+/* 確認パネル本体 */
+.gacha-modal[b-x9lss561v8] {
+    background: white;
+    width: 100%;
+    max-width: 380px;
+    overflow: hidden;
+}
+
+.gacha-modal-img[b-x9lss561v8] {
+    width: 100%;
+    aspect-ratio: 390/256;
+    object-fit: cover;
+    display: block;
+}
+
+.gacha-modal-content[b-x9lss561v8] {
+    padding: 15px;
+    text-align: center;
+}
+
+.coin-info-box[b-x9lss561v8] {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.coin-line[b-x9lss561v8] {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+    .coin-line.minus[b-x9lss561v8] {
+        color: red;
+    }
+
+    .coin-line.total[b-x9lss561v8] {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-top: 5px;
+    }
+
+.text-error[b-x9lss561v8] {
+    color: red;
+}
+
+.text-success[b-x9lss561v8] {
+    color: green;
+}
+
+.error-msg[b-x9lss561v8] {
+    background: #fee;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.button-row[b-x9lss561v8] {
+    display: flex;
+    gap: 10px;
+}
+
+    .button-row button[b-x9lss561v8] {
+        flex: 1;
+        padding: 12px;
+        border-radius: 8px;
+        font-weight: bold;
+        border: none;
+    }
+
+.btn-sub[b-x9lss561v8] {
+    background: #ddd;
+}
+
+.btn-main[b-x9lss561v8] {
+    background: #ffc107;
+}
+
+.btn-buy[b-x9lss561v8] {
+    background: #007bff;
+    color: white;
+}
+/* /Shared/GachaContinueModal.razor.rz.scp.css */
+/* 画面全体を覆う背景 */
+.gacha-overlay[b-ijaven0gvw] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: none;
+}
+
+/* 確認パネル本体 */
+.gacha-modal[b-ijaven0gvw] {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    overflow: hidden;
+    padding:12px;
+}
+
+.continue-modal[b-ijaven0gvw] {
+    border: 2px solid #ffca28;
+}
+
+.mini-gacha-img[b-ijaven0gvw] {
+    width: 390px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.current-coin-badge[b-ijaven0gvw] {
+/*    background: #1a1a1a;*/
+/*    padding: 8px 15px;*/
+    border-radius: 20px;
+    margin: 16px 0;
+    color: #ed4100;
+    font-size:1.2rem;
+}
+
+.continue-actions[b-ijaven0gvw] {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.btn-loop[b-ijaven0gvw] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 10連を一番目立たせる */
+.count-10[b-ijaven0gvw] {
+    background: linear-gradient(to bottom, #ffca28, #f57f17);
+    color: black;
+}
+
+.count-1[b-ijaven0gvw] {
+    background: #444;
+    color: white;
+}
+
+.count-100[b-ijaven0gvw] {
+    background: #b71c1c;
+    color: white;
+}
+
+.btn-close-loop[b-ijaven0gvw] {
+    margin-top: 10px;
+    background: transparent;
+    color: #aaa;
+    border: none;
+    text-decoration: underline;
+}
+/* /Shared/GachaFilterBar.razor.rz.scp.css */
+/* フィルター */
+.filter-bar[b-qxc8y8yq6t] {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.sort-select[b-qxc8y8yq6t] {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.tag-btn[b-qxc8y8yq6t] {
+    /* 基本スタイル */
+    background: #f0f0f0;
+    color: #333;
+    transition: all 0.2s;
+    border-radius:1rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    white-space:nowrap;
+}
+
+    /* 選択中のスタイル */
+    .tag-btn.active[b-qxc8y8yq6t] {
+        background: #f26500;
+        color: white;
+        border-color: #ff4757;
+        font-weight: bold;
+    }
+/* /Shared/GachaResultView.razor.rz.scp.css */
+.result-overlay[b-1p0oj57a7y] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.95);
+    z-index: 3000;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 10px;
+    scrollbar-gutter: stable;
+}
+
+.result-container[b-1p0oj57a7y] {
+    width: 100%;
+    max-width: 500px;
+    padding-bottom: 100px;
+    background: white;
+}
+
+.result-header[b-1p0oj57a7y] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+}
+
+.sort-select[b-1p0oj57a7y] {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    outline: none;
+}
+
+    .sort-select:focus[b-1p0oj57a7y] {
+        border-color: #ffca28;
+    }
+.selection-controls[b-1p0oj57a7y] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+    .selection-controls button[b-1p0oj57a7y] {
+        background: none;
+        border: 1px solid #666;
+        color: #ccc;
+        font-size: 0.7rem;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-left: 5px;
+    }
+
+.result-grid[b-1p0oj57a7y] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    background: white;
+    width: 100%;
+    padding-bottom: 220px;
+}
+
+.card-wrapper[b-1p0oj57a7y] {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+    .card-wrapper.selected[b-1p0oj57a7y] {
+        border-color: #4caf50;
+        transform: translateY(-5px);
+    }
+
+.result-card-img[b-1p0oj57a7y] {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    display: block;
+}
+
+.exchange-badge[b-1p0oj57a7y] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.select-check[b-1p0oj57a7y] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-footer[b-1p0oj57a7y] {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+    background: #222;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.total-info[b-1p0oj57a7y] {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.action-buttons[b-1p0oj57a7y] {
+    display: flex;
+    gap: 10px;
+}
+
+    .action-buttons button[b-1p0oj57a7y] {
+        flex: 1;
+        padding: 12px;
+        border-radius: 8px;
+        font-weight: bold;
+        border: none;
+    }
+
+        .action-buttons button:disabled[b-1p0oj57a7y] {
+            opacity: 0.4;
+        }
+
+.btn-exchange[b-1p0oj57a7y] {
+    background: #ffc107;
+    color: black;
+}
+
+.btn-shipping[b-1p0oj57a7y] {
+    background: #4caf50;
+    color: white;
+}
+
+.btn-close-text[b-1p0oj57a7y] {
+    background: none;
+    border: none;
+    color: #888;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+/**
+    ★★★　当たりカードのグラデーション　★★★
+*/
+.card-wrapper.win[b-1p0oj57a7y] {
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+}
+
+/* 光の帯(グラデ) */
+.shine-effect[b-1p0oj57a7y] {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient( to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0) 100% );
+    animation: shine-animation-b-1p0oj57a7y 1.5s infinite;
+    transform: skewX(-25deg);
+}
+
+/* 左から右へ動かすアニメーション */
+@keyframes shine-animation-b-1p0oj57a7y {
+    0% {
+        left: -120%;
+    }
+    100% {
+        left: 120%;
+    }
+}
