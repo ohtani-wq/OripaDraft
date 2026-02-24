@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OripaDraftWasm</title>
-    <base href="/OripaDraft/" />
+    <base href="/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -60,6 +60,28 @@
                 // C# 呼び出し
                 dotNetHelper.invokeMethodAsync('InvokeOnSubmit');
             };
+        };
+
+        window.gachaPlayer = {
+            playVideo: function (videoElement) {
+                if (!videoElement) return false;
+
+                videoElement.muted = true;
+                videoElement.playsInline = true;
+
+                // srcが変更されたことをブラウザに認識させるために load() を呼ぶ
+                videoElement.load();
+
+                var promise = videoElement.play();
+                if (promise !== undefined) {
+                    promise.then(() => {
+                        console.log("Play success!");
+                    }).catch(error => {
+                        console.log("Play failed:", error);
+                    });
+                }
+                return true;
+            }
         };
     </script>
 </body>

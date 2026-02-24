@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "OripaDraftWasm",
   "resources": {
-    "hash": "sha256-eqxh7yuvGCvVfty8JA0ee6XRVnjsB62ArlQhLyyGVEk=",
+    "hash": "sha256-4ObHpER0fey3O0thkt80v1LRL7hCdrrvveUEwF/C5fU=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-NljIbpK/1KCj0+knpX8U77Rbl5kTtfFIuFjK7AuczEw="
     },
@@ -34,7 +34,7 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-Bi1hyBMWneH/ByWbqT/pNe0B7I/NQFklzD2g3Whdqlk=",
       "Microsoft.JSInterop.wasm": "sha256-DFlPzDnB9m2kRBoouuesxNJ493svab0+Ny1TvW0GWBA=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-4soNkn8aqTulPavV5tgrBBe7jEypSOVIlJw/okXugLA=",
-      "MudBlazor.wasm": "sha256-Q2TA3cw2M+oYyP4NCcmWPoTML0GFNq+CGkm5e9LUQJ4=",
+      "MudBlazor.wasm": "sha256-L8oPxduYuU6d26I7oS5JINwR6D+1VVCt8pfQ3pC8F6Q=",
       "System.Collections.Concurrent.wasm": "sha256-Qf/zCcsYjVOcQRO0Q9ddQ9ihuORi6no1fsJ0L3HIpxU=",
       "System.Collections.Immutable.wasm": "sha256-8jq0T9wTDFMKbw8D7niZK30e50chZ+NfpxbGi0LIiP0=",
       "System.Collections.wasm": "sha256-CBruLe9FVkof0XmKNS7oEhr4svRr9UHY73P4FybvC/M=",
@@ -49,13 +49,13 @@
       "System.Net.Primitives.wasm": "sha256-GTx9Vabfjq3U6DO7N46Q6lwlE3ZEocfrOGxDRqu1U3A=",
       "System.Private.Uri.wasm": "sha256-rOxAHBOEXE6i2xsTA1uz3W/garjeocQKLpfZZ/tS+B8=",
       "System.Runtime.InteropServices.JavaScript.wasm": "sha256-K5lP30ZHOIvoCedni4gfho494UjvhcM55fAoEptz6iU=",
-      "System.Runtime.wasm": "sha256-pZCXi21lgm+yP7Fs+tGx1JZIebIqtCFMnjXV56kVH44=",
+      "System.Runtime.wasm": "sha256-RczLh+z6bc9uG13SY2DNZRvOwnerNCgkKZubZq75fdI=",
       "System.Text.Encodings.Web.wasm": "sha256-YZTyVkf+6++HcEP8mHZ6czMP3Ul886NWB5TYbCMFawE=",
       "System.Text.Json.wasm": "sha256-XlHiSWTVRwBglQxSQk6CJkbzCA/CqD08+X7ntvYLGw4=",
       "System.Text.RegularExpressions.wasm": "sha256-cDllb+4UOkL+Y769LDWxGad7OK06n6hfmPeQFpqfhPQ=",
       "System.Threading.wasm": "sha256-nmepV77ZAMV4rtWKj97dQetLJPZg+Rk73df3E6cmfe8=",
       "System.Private.CoreLib.wasm": "sha256-ElxvHIMCxJv+kKP9smq/mNWHBWAPyuUy8Yu1BCM98lI=",
-      "OripaDraftWasm.wasm": "sha256-2QtVWJmEQwxXgo+V6z80nsmgilNwXTRdXQs4sWaAVf0="
+      "OripaDraftWasm.wasm": "sha256-K6b7lv9b+KZblHtbOYyO4KkHvdt8etN8skAfo2F44Kw="
     }
   },
   "cacheBootResources": true,
