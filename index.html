@@ -41,23 +41,23 @@
         window.initGachaAction = function (buttonId, dotNetHelper) {
             const btn = document.getElementById(buttonId);
             if (!btn) {
-                console.log("Button not found yet..."); // これが出るならタイミングが早すぎ
+                console.log("Button not found yet...");
                 return;
             }
 
-            // 重複登録防止のため、一度関数をリセット
+            //重複登録防止のため、一度関数をリセット
             btn.onclick = null;
 
             btn.onclick = function () {
                 console.log("Button clicked via JS (ID: " + buttonId + ")");
 
-                // 動画の許可取り
+                //動画の許可取り
                 const dummy = document.createElement('video');
                 dummy.src = "videos/sample1.mp4";
                 dummy.muted = true;
                 dummy.play().catch(e => console.log("Pre-play error", e));
 
-                // C# 呼び出し
+                //C#呼び出し
                 dotNetHelper.invokeMethodAsync('InvokeOnSubmit');
             };
         };
