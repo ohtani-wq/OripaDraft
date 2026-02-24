@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OripaDraftWasm</title>
-    <base href="/OripaDraft/" />
+    <base href="/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
@@ -38,19 +38,28 @@
                 window.onbeforeunload = null;
             }
         };
-    </script>
-
-    <script>
-        window.handleGachaClick = function (dotNetHelper) {
-            // 1. ダミーでも本物でもいいので、この「指が触れた瞬間」に再生を試みる
-            // これにより、この後のダイアログ内の動画再生が「許可済み」扱いになります
-            const v = document.querySelector('video');
-            if (v) {
-                v.play().catch(() => { /* まだタグがなくてもOK */ });
+        window.initGachaAction = function (buttonId, dotNetHelper) {
+            const btn = document.getElementById(buttonId);
+            if (!btn) {
+                console.log("Button not found yet..."); // これが出るならタイミングが早すぎ
+                return;
             }
 
-            // 2. C#側の OnSubmit メソッドを呼び出す
-            dotNetHelper.invokeMethodAsync('InvokeOnSubmit');
+            // 重複登録防止のため、一度関数をリセット
+            btn.onclick = null;
+
+            btn.onclick = function () {
+                console.log("Button clicked via JS (ID: " + buttonId + ")");
+
+                // 動画の許可取り
+                const dummy = document.createElement('video');
+                dummy.src = "videos/sample1.mp4";
+                dummy.muted = true;
+                dummy.play().catch(e => console.log("Pre-play error", e));
+
+                // C# 呼び出し
+                dotNetHelper.invokeMethodAsync('InvokeOnSubmit');
+            };
         };
     </script>
 </body>
